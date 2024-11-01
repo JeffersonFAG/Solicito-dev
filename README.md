@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Proyecto de Visualización de Episodios, Locaciones y Personajes
 
-## Getting Started
+Este proyecto permite a los usuarios explorar episodios, locaciones y personajes de una serie ficticia, con la capacidad de visualizar detalles de cada elemento, seleccionar favoritos, y almacenar sus favoritos en una base de datos SQL o NoSQL.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Visualización de Ventanas**:
+   - Ventana para explorar episodios, locaciones y personajes.
+   - Cada ventana incluye imágenes y detalles de cada elemento (al menos 3 datos adicionales).
+2. **Detalles Individuales**:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   - Posibilidad de ver información detallada de cada episodio, locación o personaje en una vista separada.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Favoritos Persistentes**:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   - Los usuarios pueden marcar como favoritos episodios, locaciones o personajes.
+   - Los favoritos se mantienen durante toda la sesión de usuario usando Zustand.
 
-## Learn More
+4. **Guardado en Base de Datos**:
+   - Opción para que los usuarios guarden todos sus favoritos en una base de datos de su elección, ya sea SQL o NoSQL.
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologías Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**: Next, Zustand (para manejo de estado global),
+- **Base de Datos**: MongoDB
+- **Estilos**: TailwindCSS.
+- **Fetch**: Librerías como Axios para las solicitudes HTTP.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Instalación y Configuración
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/JeffersonFAG/Solicito-dev.git
+   cd solicito-dev
+   ```
+2. **Instala las dependencias**
+   ```bash
+   npm install
+   ```
+3. **Inicia el proyecto y disfruta de la aventura**
+   ```bash
+   npm run dev
+   ```
