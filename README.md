@@ -26,6 +26,15 @@ Este proyecto permite a los usuarios explorar episodios, locaciones y personajes
 - **Estilos**: TailwindCSS.
 - **Fetch**: Librerías como Axios para las solicitudes HTTP.
 
+## Enfoque
+
+- Se utiliza una estructura de carpeta generica, realizando componenetes para su reutilización.
+- Se hace llamado a la configuración de nuestra db en mongoDb para hacaer post de los datos guardados en favoritos.
+
+## Mejoras
+
+Extraer la renderización de la logica de los componentes.
+
 ## Instalación y Configuración
 
 1. **Clona el repositorio**:
